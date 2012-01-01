@@ -1,0 +1,53 @@
+@import 'reset';
+@import 'clearfix';
+@import 'nav';
+
+body {
+  font-family:helvetica, arial, sans-serif;
+  color:#333;
+}
+
+#header {
+  background: #2284c5;
+  height:30px;
+}
+
+#body {
+  width:980px;
+  margin:0 auto;
+
+  #sidebar {
+    width:180px;
+    float:left;
+    padding-top:51px;
+  }
+  
+  #main {
+    margin-left:180px;
+    padding-top:15px;
+    border: 1px solid #ccc;
+    border-width: 0 1px 1px;
+    
+    .head {
+      padding:6px 0 16px;
+      margin: 0 20px;
+      }
+      .head span{
+        padding-right:20px;
+        margin-right:10px;
+        background:transparent url('arrow.png') no-repeat right 4px;
+      }
+      .head span:last-child {
+        background:none;
+      }
+    
+    .body {
+      padding:20px;
+    }
+  }
+}
+
+.grey-area {
+  border-top:1px solid #ccc;
+  background-color: #f8f8f8
+}
