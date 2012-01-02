@@ -4,16 +4,16 @@
 *
 */
 $(function(){
-  
-  $("td.rightcol button").overlay({
+
+  $("button[rel]").overlay({
     // some mask tweaks suitable for modal dialogs
-  	mask: {
-  		color: '#ebecff',
-  		loadSpeed: 200,
-  		opacity: 0.9
-  	},
-  	onLoad: function(e){
-  	  e.target.getOverlay().find("textarea").htmlarea({
+    mask: {
+      color: '#ebecff',
+      loadSpeed: 200,
+      opacity: 0.9
+    },
+    onLoad: function(e){
+      e.target.getOverlay().find("textarea").htmlarea({
         // Override/Specify the Toolbar buttons to show
         toolbar: [
           ["html"],
@@ -23,8 +23,8 @@ $(function(){
           ["link", "unlink"]
         ]
       });
-  	}
+    }
   });
-  
-  $("ul.tabs").tabs("div.panes > div"); 
+
+  $("ul.tabs").tabs("div.panes > div");
 });

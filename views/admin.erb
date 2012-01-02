@@ -7,17 +7,49 @@
   <div class="body grey-area">
     <ul>
       <li>
-        <button>edit</button>
+        <button rel="#overlay">edit</button>
         <h3>Influitive Corp.</h3>
       </li>
       <li>
-        <button>edit</button>
+        <button rel="#overlay">edit</button>
         <h3>Xactly</h3>
       </li>
       <li>
-        <button>edit</button>
+        <button rel="#overlay">edit</button>
         <h3>Ektron</h3>
       </li>
     </ul>
+  </div>
+</div>
+
+<div id="overlay">
+  <div class="head"><h2>Edit Company</h2></div>
+  <div class="body">
+  <table>
+      <tr>
+        <th>Company Name:</th>
+        <td class="data"><input type="text" value="Influitive Corp." /></td>
+        <td class="rightcol"></td>
+      </tr>
+      <tr><td colspan='3'><hr /></td></tr>
+      <tr>
+        <th>Subdomain:</th>
+        <td class="data"><input type="text" value="app" disabled="disabled" /></td>
+        <td class="rightcol"></td>
+      </tr>
+      <tr>
+        <th>Custom Domain:</th>
+        <td class="data"><input type="text" value="vip.influitivecorp.com" /></td>
+        <td class="rightcol"></td>
+      </tr>
+      <tr><td colspan='3'><hr /></td></tr>
+      <tr>
+        <td></td>
+        <td class="data">
+          <button type="submit" class="close">Save Changes</button>
+          <a href="#" class="close">Cancel</a>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>

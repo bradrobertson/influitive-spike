@@ -13,6 +13,10 @@
     margin-bottom:10px;
   }
 
+  .head h2{
+    margin-bottom:0;
+  }
+
   .tabs {
 
     li {
@@ -45,10 +49,10 @@
 
   .actions {
     text-align:right;
+  }
 
-    a.close {
-      font-size:11px;
-      text-decoration:underline;
-    }
+  a.close {
+    font-size:11px;
+    text-decoration:underline;
   }
 }
