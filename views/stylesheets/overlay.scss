@@ -1,0 +1,54 @@
+#overlay {
+  background-color:#fff;
+  display:none;
+  width:550px;
+  padding:15px;
+  text-align:left;
+  border:10px solid #ccc;
+  border-radius:6px;
+  box-shadow: 0 0 50px #ccc;
+
+  h2 {
+    font-size:20px;
+    margin-bottom:10px;
+  }
+  
+  .tabs {
+    
+    li {
+      float:left;
+      width:100px;
+      margin:0 5px;
+      
+      a {
+        display:block;
+        background:#f8f8f8;
+        text-align:center;
+        padding:10px;
+        border:2px solid #ccc;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+        
+        &.current {
+          background:#fff;
+          border-bottom-color:#fff;
+        }
+      }
+    }
+  }
+  
+  .panes {
+    padding:20px;
+    margin-top:-2px;
+    border-top:2px solid #ccc;
+  }
+  
+  .actions {
+    text-align:right;
+    
+    a.close {
+      font-size:11px;
+      text-decoration:underline;
+    }
+  }
+}

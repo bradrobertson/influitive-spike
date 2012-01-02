@@ -1,6 +1,7 @@
-div.jHtmlArea { display: inline block; }
+div.jHtmlArea { display:block; }
 div.jHtmlArea div { padding: 0px; margin: 0px; }
-div.jHtmlArea .ToolBar { }
+div.jHtmlArea iframe, div.jHtmlArea textarea { border:1px solid #ccc;margin-top:-1px; }
+div.jHtmlArea .ToolBar { overflow:hidden;}
 div.jHtmlArea .ToolBar ul { border: solid 1px #ccc; margin: 1px; padding: 1px; float: left; background: #fff url('/images/jhtml/jHtmlArea_Toolbar_Group_BG.png') repeat-x;}
 div.jHtmlArea .ToolBar ul li { list-style-type: none; float: left; border: none; padding: 1px; margin: 1px; }
 div.jHtmlArea .ToolBar ul li:hover { border: solid 1px #ccc; background: #ddd url('/images/jhtml/jHtmlArea_Toolbar_Group__Btn_Select_BG.png'); padding: 0; }
@@ -46,3 +47,8 @@ div.jHtmlArea .ToolBar ul li a.justifyright { background-position: -32px -32px;}
 div.jHtmlArea .ToolBar ul li a.increasefontsize { background-position: -48px -32px;}
 div.jHtmlArea .ToolBar ul li a.decreasefontsize { background-position: -64px -32px;}
 div.jHtmlArea .ToolBar ul li a.forecolor { background-position: -80px -32px;}
+
+textarea.wysiwyg{
+  width:100%;
+  height:200px;
+}
