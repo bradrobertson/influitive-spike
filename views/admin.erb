@@ -1,55 +1,47 @@
-<div id="sidebar">
-  <%= erb :admin_nav, :locals => {:klass => 'companies'} %>
-</div>
+<div class="navbar">
+  <div class="navbar-inner">
+    <ul class="nav nav-pills pull-left">
+      <li class="dropdown" id="context-switcher">
+        <a class="dropdown-toggle brand" data-toggle="dropdown" href="#context-switcher">
+          Admin
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="/advocate">Advocate View</a></li>
+        </ul>
+      </li>
+      <li class="divider-vertical"></li>
+    </ul>
 
-<div id="main">
-  <div class="head"><h2><span>Admin</span><span>Companies</span></h2></div>
-  <div class="body grey-area">
-    <ul>
-      <li>
-        <button rel="#overlay">edit</button>
-        <h3>Influitive Corp.</h3>
+    <ul class="nav pull-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Add <b>+</b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Advocate</a></li>
+          <li><a href="#">Challenge</a></li>
+          <li><a href="#">Group</a></li>
+          <li><a href="#">Reward</a></li>
+        </ul>
       </li>
-      <li>
-        <button rel="#overlay">edit</button>
-        <h3>Xactly</h3>
-      </li>
-      <li>
-        <button rel="#overlay">edit</button>
-        <h3>Ektron</h3>
+
+      <li class="divider-vertical"></li>
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Influitive Admin <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Edit Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
       </li>
     </ul>
-  </div>
-</div>
 
-<div id="overlay">
-  <div class="head"><h2>Edit Company</h2></div>
-  <div class="body">
-  <table>
-      <tr>
-        <th>Company Name:</th>
-        <td class="data"><input type="text" value="Influitive Corp." /></td>
-        <td class="rightcol"></td>
-      </tr>
-      <tr><td colspan='3'><hr /></td></tr>
-      <tr>
-        <th>Subdomain:</th>
-        <td class="data"><input type="text" value="app" disabled="disabled" /></td>
-        <td class="rightcol"></td>
-      </tr>
-      <tr>
-        <th>Custom Domain:</th>
-        <td class="data"><input type="text" value="vip.influitivecorp.com" /></td>
-        <td class="rightcol"></td>
-      </tr>
-      <tr><td colspan='3'><hr /></td></tr>
-      <tr>
-        <td></td>
-        <td class="data">
-          <button type="submit" class="close">Save Changes</button>
-          <a href="#" class="close">Cancel</a>
-        </td>
-      </tr>
-    </table>
+    <ul class="container nav" style="float:none;margin:auto;width:700px;">
+      <li class="active"><a href="#">Dashboard</a></li>
+      <li><a href="#">Advocates</a></li>
+      <li><a href="#">Challenges</a></li>
+    </ul>
+
   </div>
 </div>
